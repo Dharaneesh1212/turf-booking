@@ -15,9 +15,9 @@ router.post("/slots", create);
 router.get("/all", allBookings);
 
 // GET: http://localhost:8000/turf/getbyname
-router.get("/getbyname", bookingsByName);
+router.get("/getbyname/:username", bookingsByName);
 
 // DELETE: http://localhost:8000/turf/delete
-router.delete("/delete", deleteBooking);
+router.delete("/:id", deleteBooking);
 
 export default router;
