@@ -12,12 +12,12 @@ const router = express.Router();
 router.post("/slots", create);
 
 // GET: http://localhost:8000/turf/all
-router.post("/all", allBookings);
+router.get("/all", allBookings);
 
 // GET: http://localhost:8000/turf/getbyname
-router.post("/getbyname", bookingsByName);
+router.get("/getbyname", bookingsByName);
 
 // DELETE: http://localhost:8000/turf/delete
-router.post("/delete", deleteBooking);
+router.delete("/delete", deleteBooking);
 
 export default router;

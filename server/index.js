@@ -8,6 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const CONNECTION_URL = process.env.CONNECTION_URL;
 
+// Midddleware
+app.use(express.json());
+
 // Routes
 app.use("/turf", TurfBooking);
 
