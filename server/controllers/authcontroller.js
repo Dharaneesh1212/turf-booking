@@ -34,7 +34,36 @@ export const signup = async (req, res) => {
 // Singin
 
 export const signin = async (req, res) => {
+  const { email, password } = req.body;
   try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not registered" });
+    }
+    const validpassword = await bcrypt.compare(password, user.password);
+    if (!validpassword) {
+      return res
+        .status(401)
+        .json({ success: false, message: "Password is incorrect" });
+    }
+
+    const token = jwt.sign({ email: user.email }, process.env.KEY, {
+      expiresIn: "1h",
+    });
+
+    res.cookie("token", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "none",
+      maxAge: 3600000,
+    });
+
+    res.status(200).json({
+      success: true,
+      message: "Logged in successfully",
+    });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
