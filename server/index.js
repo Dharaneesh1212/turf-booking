@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import TurfBooking from "./routes/bookingroute.js";
+import userRouter from "./routes/authroute.js"
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
@@ -16,6 +17,7 @@ app.use(cookieParser());
 
 // Routes
 app.use("/turf", TurfBooking);
+app.use("/user", userRouter);
 
 mongoose
   .connect(CONNECTION_URL)
