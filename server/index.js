@@ -2,6 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import TurfBooking from "./routes/bookingroute.js";
+import cookieParser from "cookie-parser";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
@@ -10,6 +12,7 @@ const CONNECTION_URL = process.env.CONNECTION_URL;
 
 // Midddleware
 app.use(express.json());
+app.use(cookieParser());
 
 // Routes
 app.use("/turf", TurfBooking);

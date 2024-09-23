@@ -72,7 +72,41 @@ export const signin = async (req, res) => {
 // Forget-password
 
 export const forgetpassword = async (req, res) => {
+  const { email } = req.body;
   try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res
+        .status(404)
+        .json({ success: false, message: "User not registered" });
+    }
+
+    const token = jwt.sign({ id: user._id }, process.env.KEY, {
+      expiresIn: "5m",
+    });
+
+    var transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "dharun12122002@gmail.com",
+        pass: "szge icwp baip jyyp",
+      },
+    });
+
+    var mailOptions = {
+      from: "dharun12122002@gmail.com",
+      to: email,
+      subject: "Reset Password",
+      text: `http://localhost:5173/resetPassword/${token}`,
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+      if (error) {
+        return res.json({ message: "error sending email" });
+      } else {
+        return res.json({ status: true, message: "email sent successfully" });
+      }
+    });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
