@@ -24,5 +24,4 @@ router.post("/resetpassword/:token", resetpassword);
 // POST => http://localhost:8000/user/verify
 router.get("/verify", verify);
 
-
 export default router;
