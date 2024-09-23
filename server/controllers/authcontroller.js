@@ -130,9 +130,13 @@ export const resetpassword = async (req, res) => {
 
 // Verify
 
-export const verify = async (req, res) => {
+export const verify = async (req, res, next) => {
+  const token = req.cookies.token;
   try {
+    if (!token) {
+      return res.status(401).json({ status: false, message: "No token" });
+    }
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
+    res.status(401).json({ success: false, message: error.message });
   }
 };
