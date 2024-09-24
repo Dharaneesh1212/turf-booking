@@ -3,9 +3,9 @@ import Admin from "../models/adminmodel.js";
 // adding image
 export const addingImage = async (req, res) => {
   try {
-    const adminImage = new Admin(req.body);
-    await adminImage.save();
-    res.status(201).json({ success: true, data: adminImage });
+    const addImg = new Admin(req.body);
+    await addImg.save();
+    res.status(201).json({ success: true, data: addImg });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
@@ -24,7 +24,14 @@ export const gettingImage = async (req, res) => {
 // deleting image
 export const deletingImage = async (req, res) => {
   try {
-    
+    const { id } = req.params;
+    const deleteImg = await Admin.findByIdAndDelete(id);
+    if (!deleteImg) {
+      res.status(404).json({ success: false, message: error.message });
+    }
+    res
+      .status(200)
+      .json({ success: true, message: "Image deleted successfully" });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
