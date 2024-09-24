@@ -27,7 +27,7 @@ export const deletingImage = async (req, res) => {
     const { id } = req.params;
     const deleteImg = await Admin.findByIdAndDelete(id);
     if (!deleteImg) {
-      res.status(404).json({ success: false, message: error.message });
+      return res.status(404).json({ success: false, message: error.message });
     }
     res
       .status(200)
