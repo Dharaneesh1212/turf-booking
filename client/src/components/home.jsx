@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <main className="flex justify-center items-center">
@@ -18,12 +20,14 @@ const Home = () => {
             <img src="" alt="OFFERS" />
           </div>
           <div className="h-20 flex justify-end items-center w-full p-4">
-            <button
-              id="ofr-btn"
-              className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
-            >
-              View Offers
-            </button>
+            <Link to="/offers">
+              <button
+                id="ofr-btn"
+                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
+              >
+                View Offers
+              </button>
+            </Link>
           </div>
         </div>
         <div
@@ -34,12 +38,14 @@ const Home = () => {
             <img src="" alt="SLOTS" />
           </div>
           <div className="h-20 flex justify-end items-center w-full p-4">
-            <button
-              id="slot-btn"
-              className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
-            >
-              Book Slots
-            </button>
+            <Link to="/slots">
+              <button
+                id="slot-btn"
+                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
+              >
+                Book Slots
+              </button>
+            </Link>
           </div>
         </div>
         <div
@@ -50,12 +56,14 @@ const Home = () => {
             <img src="" alt="TOURNAMENTS" />
           </div>
           <div className="h-20 flex justify-end items-center w-full p-4">
-            <button
-              id="trnmnt-btn"
-              className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
-            >
-              View Tournaments
-            </button>
+            <Link to="/tournaments">
+              <button
+                id="trnmnt-btn"
+                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
+              >
+                View Tournaments
+              </button>
+            </Link>
           </div>
         </div>
       </div>
