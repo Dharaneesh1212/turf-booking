@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <main id="navbar" className="flex items-center justify-center w-screen">
+    <main id="navbar" className="flex items-center justify-center w-[84.3rem]">
       <div className="h-20 w-full flex justify-center items-center flex-row gap-40">
         <Link
           to="/"
