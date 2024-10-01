@@ -5,6 +5,9 @@ import Auth from "./components/authentication";
 import Offers from "./components/offers";
 import Tournament from "./components/tournament";
 import Slots from "./components/slots";
+import Register from "./components/register";
+import ForgotPassword from "./components/forgot";
+import ResetPassword from "./components/reset";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const App = () => {
@@ -32,6 +35,18 @@ const App = () => {
         {
           path: "/tournaments",
           element: <Tournament />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
+        },
+        {
+          path: "/forgot",
+          element: <ForgotPassword />,
+        },
+        {
+          path: "/reset",
+          element: <ResetPassword />,
         },
       ],
     },

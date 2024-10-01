@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 
-const Auth = () => {
+const Register = () => {
   return (
     <main className="flex items-center justify-center">
-      <div className="flex items-center justify-start border-2 border-black h-[30rem] w-[25rem] rounded-md flex-col gap-6 p-16">
+      <div className="flex items-center justify-start border-2 border-black h-[30rem] w-[25rem] rounded-md flex-col gap-6 p-10">
         <h1 className="flex items-center justify-center text-xl font-medium text-black">
-          Log-in
+          Register
         </h1>
         <form action="" className="flex flex-col gap-8">
+          <input
+            type="text"
+            className="h-12 w-[17rem] text-xl font-large text-black p-1 outline-none border-b-2 border-gray-400 capitalize"
+            placeholder="name"
+          />
           <input
             type="email"
             className="h-12 w-[17rem] text-xl font-large text-black p-1 outline-none border-b-2 border-gray-400"
@@ -18,19 +23,16 @@ const Auth = () => {
             className="h-12 w-[17rem] text-xl font-large text-black p-1 outline-none border-b-2 border-gray-400"
             placeholder="password"
           />
-          <button className="h-12 w-[17rem] bg-green-500 hover:bg-green-600 rounded-md text-lg">
-            Log-in
+          <button className="h-12 w-[17rem] bg-sky-500 hover:bg-sky-600 rounded-md text-lg">
+            Regster
           </button>
         </form>
-        <Link to="/forgot" className="font-large hover:underline">
-          Forgot Password ?
-        </Link>
         <div className="text-lg">
           <h1>
-            Don't have an account?{"  "}
-            <Link to="/register">
+            Already have an account?{"  "}
+            <Link to="/signin">
               <span className="font-medium hover:underline cursor-pointer">
-                Register
+                Log-in
               </span>
             </Link>
           </h1>
@@ -40,4 +42,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default Register;
