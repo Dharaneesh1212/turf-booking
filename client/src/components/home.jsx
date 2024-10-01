@@ -12,9 +12,9 @@ const Home = () => {
           id="logo"
           className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
-          <div className="flex justify-center items-center w-full rounded-md">
+          <div className="flex justify-center items-center w-full rounded-md bg-green-300">
             <img
-              className="rounded-md h-[32rem] w-full"
+              className="rounded-md h-[31.7rem] w-full"
               src={turf}
               alt="LOGO"
             />

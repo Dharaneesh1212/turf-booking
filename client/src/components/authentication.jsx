@@ -5,7 +5,7 @@ const Auth = () => {
     <main className="flex items-center justify-center">
       <div className="flex items-center justify-start border-2 border-black h-[30rem] w-[27rem] rounded-md flex-col gap-6 p-16">
         <h1 className="flex items-center justify-center text-xl font-medium text-black">
-          Sign-In
+          Log-in
         </h1>
         <form action="" className="flex flex-col gap-8">
           <input
@@ -19,7 +19,7 @@ const Auth = () => {
             placeholder="password"
           />
           <button className="h-12 w-[17rem] bg-red-500 hover:bg-red-600 rounded-md text-lg">
-            sign-in
+            Log-in
           </button>
         </form>
         <Link className="font-large hover:underline">Forgot Password ?</Link>

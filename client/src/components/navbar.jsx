@@ -14,7 +14,7 @@ const Navbar = () => {
           to="/signin"
           className=" flex justify-center items-center gap-1 font-medium text-xl text-black hover:underline"
         >
-          Signin
+          Log-in
         </Link>
       </div>
     </main>
