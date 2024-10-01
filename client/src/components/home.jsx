@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import turf from "../assets/images/turf.jpg";
+import turfTen from "../assets/images/turfTen.jpg";
 import turfOne from "../assets/images/turfOne.jpg";
-import turfTwo from "../assets/images/turfTwo.jpg";
-import turfThree from "../assets/images/turfThree.jpg";
+import turfSix from "../assets/images/turfSix.jpg";
 
 const Home = () => {
   return (
@@ -10,18 +10,26 @@ const Home = () => {
       <div className="flex justify-center items-center flex-col gap-4 w-screen p-4">
         <div
           id="logo"
-          className="h-72 w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
+          className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
           <div className="flex justify-center items-center w-full rounded-md">
-            <img className="h-72 w-full" src={turf} alt="LOGO" />
+            <img
+              className="rounded-md h-[32rem] w-full"
+              src={turf}
+              alt="LOGO"
+            />
           </div>
         </div>
         <div
           id="offers"
-          className="h-72 w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
+          className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
           <div className="flex justify-center items-center w-full rounded-md bg-green-300">
-            <img className="h-52 w-full" src={turfOne} alt="OFFERS" />
+            <img
+              className="rounded-md h-[27rem] w-full"
+              src={turfTen}
+              alt="OFFERS"
+            />
           </div>
           <div className="h-20 flex justify-end items-center w-full p-4">
             <Link to="/offers">
@@ -36,10 +44,14 @@ const Home = () => {
         </div>
         <div
           id="slots"
-          className="h-72 w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
+          className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
           <div className="flex justify-center items-center w-full rounded-md bg-green-300">
-            <img className="h-52 w-full" src={turfTwo} alt="SLOTS" />
+            <img
+              className="rounded-md h-[27rem] w-full"
+              src={turfOne}
+              alt="SLOTS"
+            />
           </div>
           <div className="h-20 flex justify-end items-center w-full p-4">
             <Link to="/slots">
@@ -54,10 +66,14 @@ const Home = () => {
         </div>
         <div
           id="tournament"
-          className="h-72 w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
+          className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
           <div className="flex justify-center items-center w-full rounded-md bg-green-300">
-            <img className="h-52 w-full" src={turfThree} alt="TOURNAMENTS" />
+            <img
+              className="rounded-md h-[27rem] w-full"
+              src={turfSix}
+              alt="TOURNAMENTS"
+            />
           </div>
           <div className="h-20 flex justify-end items-center w-full p-4">
             <Link to="/tournaments">
