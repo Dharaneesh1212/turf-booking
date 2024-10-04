@@ -12,9 +12,9 @@ const Home = () => {
           id="logo"
           className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
-          <div className="flex justify-center items-center w-full rounded-md bg-green-300">
+          <div className="flex justify-center items-center w-full rounded-md">
             <img
-              className="rounded-md h-[31.7rem] w-full"
+              className="rounded-md h-[31.7rem] w-full animate__animated animate__zoomIn"
               src={turf}
               alt="LOGO"
             />
@@ -24,9 +24,9 @@ const Home = () => {
           id="offers"
           className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
-          <div className="flex justify-center items-center w-full rounded-md bg-green-300">
+          <div className="flex justify-center items-center w-full rounded-md">
             <img
-              className="rounded-md h-[27rem] w-full"
+              className="rounded-md h-[27rem] w-full animate__animated animate__zoomIn"
               src={turfTen}
               alt="OFFERS"
             />
@@ -35,7 +35,7 @@ const Home = () => {
             <Link to="/offers">
               <button
                 id="ofr-btn"
-                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
+                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600 animate__animated animate__zoomIn"
               >
                 View Offers
               </button>
@@ -46,9 +46,9 @@ const Home = () => {
           id="slots"
           className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
-          <div className="flex justify-center items-center w-full rounded-md bg-green-300">
+          <div className="flex justify-center items-center w-full rounded-md">
             <img
-              className="rounded-md h-[27rem] w-full"
+              className="rounded-md h-[27rem] w-full animate__animated animate__zoomIn"
               src={turfOne}
               alt="SLOTS"
             />
@@ -57,7 +57,7 @@ const Home = () => {
             <Link to="/slots">
               <button
                 id="slot-btn"
-                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
+                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600 animate__animated animate__zoomIn"
               >
                 Book Slots
               </button>
@@ -68,9 +68,9 @@ const Home = () => {
           id="tournament"
           className="h-[32rem] w-full rounded-lg bg-white flex justify-center items-center flex-col border-2 border-black"
         >
-          <div className="flex justify-center items-center w-full rounded-md bg-green-300">
+          <div className="flex justify-center items-center w-full rounded-md">
             <img
-              className="rounded-md h-[27rem] w-full"
+              className="rounded-md h-[27rem] w-full animate__animated animate__zoomIn"
               src={turfSix}
               alt="TOURNAMENTS"
             />
@@ -79,7 +79,7 @@ const Home = () => {
             <Link to="/tournaments">
               <button
                 id="trnmnt-btn"
-                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600"
+                className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600 animate__animated animate__zoomIn"
               >
                 View Tournaments
               </button>
