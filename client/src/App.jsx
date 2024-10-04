@@ -9,6 +9,13 @@ import Register from "./components/register";
 import ForgotPassword from "./components/forgot";
 import ResetPassword from "./components/reset";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Monday from "./days/monday";
+import Tuesday from "./days/tuesday";
+import Wednesday from "./days/wednesday";
+import Thursday from "./days/thursday";
+import Friday from "./days/friday";
+import Saturday from "./days/saturday";
+import Sunday from "./days/sunday";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -47,6 +54,34 @@ const App = () => {
         {
           path: "/reset",
           element: <ResetPassword />,
+        },
+        {
+          path: "/monday",
+          element: <Monday />,
+        },
+        {
+          path: "/tuesday",
+          element: <Tuesday />,
+        },
+        {
+          path: "/wednesday",
+          element: <Wednesday />,
+        },
+        {
+          path: "/thursday",
+          element: <Thursday />,
+        },
+        {
+          path: "/firday",
+          element: <Friday />,
+        },
+        {
+          path: "/saturday",
+          element: <Saturday />,
+        },
+        {
+          path: "/sunday",
+          element: <Sunday />,
         },
       ],
     },
