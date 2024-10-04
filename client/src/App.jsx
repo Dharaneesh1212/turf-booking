@@ -72,7 +72,7 @@ const App = () => {
           element: <Thursday />,
         },
         {
-          path: "/firday",
+          path: "/friday",
           element: <Friday />,
         },
         {
