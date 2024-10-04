@@ -28,7 +28,7 @@ const Slots = () => {
                   id="ofr-btn"
                   className="p-2 rounded-md text-lg font-medium animate__animated animate__zoomIn text-white bg-red-500 hover:bg-red-600"
                 >
-                  Book Slot
+                  View Slot
                 </button>
               </Link>
             </div>
@@ -58,7 +58,7 @@ const Slots = () => {
                   id="ofr-btn"
                   className="p-2 rounded-md text-lg font-medium animate__animated animate__zoomIn text-white bg-red-500 hover:bg-red-600"
                 >
-                  Book Slot
+                  View Slot
                 </button>
               </Link>
             </div>
@@ -88,7 +88,7 @@ const Slots = () => {
                   id="ofr-btn"
                   className="p-2 rounded-md text-lg font-medium animate__animated animate__zoomIn text-white bg-red-500 hover:bg-red-600"
                 >
-                  Book Slot
+                  View Slot
                 </button>
               </Link>
             </div>
@@ -118,7 +118,7 @@ const Slots = () => {
                   id="ofr-btn"
                   className="p-2 rounded-md text-lg font-medium animate__animated animate__zoomIn text-white bg-red-500 hover:bg-red-600"
                 >
-                  Book Slot
+                  View Slot
                 </button>
               </Link>
             </div>
@@ -148,7 +148,7 @@ const Slots = () => {
                   id="ofr-btn"
                   className="p-2 rounded-md text-lg font-medium animate__animated animate__zoomIn text-white bg-red-500 hover:bg-red-600"
                 >
-                  Book Slot
+                  View Slot
                 </button>
               </Link>
             </div>
@@ -178,7 +178,7 @@ const Slots = () => {
                   id="ofr-btn"
                   className="p-2 rounded-md text-lg font-medium animate__animated animate__zoomIn text-white bg-red-500 hover:bg-red-600"
                 >
-                  Book Slot
+                  View Slot
                 </button>
               </Link>
             </div>
@@ -208,7 +208,7 @@ const Slots = () => {
                   id="ofr-btn"
                   className="p-2 rounded-md text-lg font-medium animate__animated animate__zoomIn text-white bg-red-500 hover:bg-red-600"
                 >
-                  Book Slot
+                  View Slot
                 </button>
               </Link>
             </div>

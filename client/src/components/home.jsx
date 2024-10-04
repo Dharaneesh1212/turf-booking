@@ -37,7 +37,7 @@ const Home = () => {
                 id="ofr-btn"
                 className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600 animate__animated animate__zoomIn"
               >
-                View Offers
+                Offers
               </button>
             </Link>
           </div>
@@ -59,7 +59,7 @@ const Home = () => {
                 id="slot-btn"
                 className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600 animate__animated animate__zoomIn"
               >
-                Book Slots
+                Slots
               </button>
             </Link>
           </div>
@@ -81,7 +81,7 @@ const Home = () => {
                 id="trnmnt-btn"
                 className="p-2 rounded-md text-lg font-medium text-white bg-red-500 hover:bg-red-600 animate__animated animate__zoomIn"
               >
-                View Tournaments
+                Tournaments
               </button>
             </Link>
           </div>
