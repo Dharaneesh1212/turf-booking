@@ -1,11 +1,25 @@
+import Monday from "../days/monday";
+import Tuesday from "../days/tuesday";
+import Wednesday from "../days/wednesday";
+import Thursday from "../days/thursday";
+import Friday from "../days/friday";
+import Saturday from "../days/saturday";
+import Sunday from "../days/sunday";
+
 const Slots = () => {
-    return ( 
-        <main className="flex items-center justify-center">
-            <div>
-                hello slot
-            </div>
-        </main>
-     );
-}
- 
+  return (
+    <main className="flex items-center justify-center">
+      <div>
+        <Monday />
+        <Tuesday />
+        <Wednesday />
+        <Thursday />
+        <Friday />
+        <Saturday />
+        <Sunday />
+      </div>
+    </main>
+  );
+};
+
 export default Slots;
