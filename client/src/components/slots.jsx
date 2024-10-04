@@ -9,7 +9,7 @@ import Sunday from "../days/sunday";
 const Slots = () => {
   return (
     <main className="flex items-center justify-center">
-      <div className="flex flex-wrap justify-center items-center gap-24 m-4 h-full">
+      <div className="flex flex-wrap justify-center items-center gap-24 p-4 h-full w-full">
         <Monday />
         <Tuesday />
         <Wednesday />
